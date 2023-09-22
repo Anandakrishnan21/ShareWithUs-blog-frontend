@@ -19,12 +19,10 @@ const Layout = () => {
   );
 };
 
-
 function App() {
   return (
     <Router>
       <Routes>
-        {/* Define your routes using the Route component */}
         <Route path="/" element={<Layout />}>
           <Route path="/" element={<Home />} />
           <Route path="/post/:id" element={<Single />} />
