@@ -9,7 +9,7 @@ function Menu({ cat }) {
     const fetchData = async () => {
       try {
         const res = await axios.get(
-          `http://localhost:8800/api/posts/?cat=${cat}`
+          `http://share-with-us.onrender.com/api/posts/?cat=${cat}`
         );
         setPosts(res.data);
       } catch (err) {
